@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	   <meta charset="utf-8">
+	   <title>Exercise 3.5</title>
+	</head>
+	<body>
+		<h1>3.5 Student survery tasks</h1>
+		<details>
+			
+			<summary>Survey Results</summary>
+			<p><mark>Students were asked to rate the food in the cafeteria on a scale of 1 to 10.</mark></p>
+			<p>The average rating was 7 out of 10.</p>
+			
+		</details>
+		<br>
+		1 <meter min = "1" max = "10" value = "7"> </meter> 10
+		
+		<form method = "post" autocomplete = "off">
+		<p>
+			<label>
+				<input type = "text" placeholder = "first name" autofocus />
+			</label>
+		</p>
+		
+		<p>	
+			<label>
+				<input list = "state" name = "state" placeholder = "state"/>
+					<datalist id = "state">
+						<option value = "Washington">Washington</option>
+						<option value = "California">California</option>
+						<option value = "Maryland">Maryland</option>
+						<option value = "Delaware">Delaware</option>
+						<option value = "New York">New York</option>
+					</datalist>
+			</label>
+				
+		</p>
+		
+		<p>
+			<label>Range:
+				1 <input type = "range" min = "1" max = "100" value = "50" /> 100
+		    </label>
+		</p>
+	</form>	
+	</body>
+</html>

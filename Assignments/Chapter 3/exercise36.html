@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Exercise 3.6</title>
+   </head>
+
+	<body>
+		<h1>3.6 (Website Registration Form with Optional Survey)</h1>
+		
+		<form method = "post" autocomplete = "off">
+		<p>
+			<label>First Name: 
+				<input type = "text" id = "first" placeholder = "first name" />
+			</label>
+		</p>
+		<p>
+			<label>Last Name: 
+				<input type = "text" id = "last" placeholder = "first name" />
+			</label>
+		</p>
+		<p>
+			<label>Email: 
+				<input type = "email" id = "email" placeholder = "name@something.com" />
+			</label>
+		</p>
+			<details>
+				<summary>Optional Survey</summary>
+				<p>
+					<label for = "collegeyears">Year In College: 
+						<input type = "text" id = "collegeyears" placeholder = "Year In College" list = "collegeyear" />
+						<datalist id = "collegeyear" >
+							<option value = "Freshman" > Freshman </option>
+							<option value = "Sophmore" > Sophmore </option>
+							<option value = "Junior" > Junior </option>
+							<option value = "Senior" > Senior </option>
+						</datalist>
+				
+				
+					</label>
+				</p>
+			
+			</details>
+		<p>
+				<input type = "submit" value = "Submit" />
+				<input type = "reset" value = "Clear" />
+		</p>
+		
+		</form>
+	</body>
+</html>
