@@ -1,0 +1,32 @@
+<?xml version = "1.0"?>
+
+<!-- Patrick Roanhouse CS 80 Section 1678 -->
+<!-- Exercise 15.7 -->
+
+
+<cookie name = "Grandma White&apos;s Cookies">
+	<servingsize>1 package</servingsize>
+
+	<calories>
+		<total>260 Calories</total>
+		<fat>100 Calories</fat>
+	</calories>
+   
+   <fat>
+      <total>11 g</total>
+      <saturated>2 g</saturated>
+   </fat>
+
+   <cholesterol>5 mg</cholesterol>
+   <sodium>210 mg</sodium>
+
+   <carbohydrates>
+	   <totalcarbs>36 g</totalcarbs>
+	   <subcarbs>
+		   <fiber>2 g</fiber>
+		   <sugars>15 g</sugars>
+	   </subcarbs>
+   </carbohydrates>
+
+   <protein>5 g</protein>
+</cookie>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Department Store Credit Limit Check</title>
+</head>
+<body>
+	
+<!-- Patrick Roanhouse -->
+<!-- Section 7.12 Assignment -->
+<!-- CS 80 Section 1678 -->	
+
+<h1>Department Store Credit Limit Check</h1>
+<hr></hr>	
+<script>
+
+    var account; 
+	var startbal;
+	var bal;
+	var charges; 
+	var credits;
+	var creditlimit; 
+	var newbal;
+   
+    // While loop to enter each new account & stop with entering 0
+    while ( true ) { 
+        
+		// Input
+        account = +prompt( "Account Number [Enter 0 to exit entry]: ", "0" );
+        if (account === 0 ) {
+            break;
+        }
+        startbal = +prompt( "Balance at beginning of month: ", "0" );
+        charges = +prompt( "Total charges this month: ", "0" );
+        credits = +prompt("Total credits this month: ", "0");
+        creditlimit = +prompt("Credit limit: ", "0");
+      
+        // Calculations
+        newbal = startbal + charges - credits; 
+      
+        // Output + Display
+        document.writeln( "<p>Account number: " + account + "</p>" );
+        document.writeln( "<p>Beginning balance: " + startbal + "</p>");
+        document.writeln( "<p>Charges: " + charges + "</p>");
+        document.writeln( "<p>Credits: " + credits + "</p>" );
+        document.writeln( "<p>Credit limit: " + creditlimit + "</p>");
+        document.writeln( "<p>New balance: " + newbal + "</p>");
+		document.writeln( "<hr></hr>" );
+
+        if ( newbal > creditlimit ) {
+            document.writeln( "<p>** Credit limit exceeded.**" );
+        }
+        document.writeln( "<hr></hr>" );
+   }
+</script>
+</body>
+</html>

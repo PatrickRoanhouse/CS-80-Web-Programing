@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<meta charset = "utf-8">
+         <title>Section 6.7</title>
+         <script type = "text/javascript">
+           
+            var firstNumber; // first string entered by user
+            var secondNumber; // second string entered by user
+            var number1; // first number to add
+            var number2; // second number to add
+            var sum; // sum of number1 and number2
+			var diff; // difference of number 1 and number 2
+			var pro; // product of number 1 and number 2
+			var quot; // quotient of number 1 and number 2
+
+            // read in first number from user as a string
+            firstNumber = window.prompt( "Enter first integer" );
+
+            // read in second number from user as a string
+            secondNumber = window.prompt( "Enter second integer" );
+
+            // convert numbers from strings to integers
+            number1 = parseInt( firstNumber ); 
+            number2 = parseInt( secondNumber );
+
+            sum = number1 + number2; // add the numbers
+			diff = number1 - number2; // subtract the numbers
+			pro = number1 * number2; // multiplying the numbers
+			quot = number1 / number2; // dividing the numbers
+			
+
+            // display the results
+            document.writeln( "<h1>Number 1 = " + number1 +"</h1><h1> Number 2 = " + number2 + "</h1>" );
+			document.writeln( "<h1>The sum = " + sum + "</h1>" );
+			document.writeln( "<h1>The difference = " + diff + "</h1>" );
+			document.writeln( "<h1>The product = " + pro + "</h1>" );
+			document.writeln( "<h1>The quotient = " + quot + "</h1>" );
+			
+			
+            // -->
+         </script>
+      </head>
+	  <body>
+	  </body>
+   </html>
+

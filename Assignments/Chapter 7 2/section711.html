@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gas Mileage Calculator</title>
+</head>
+<body>
+<!-- Patrick Roanhouse -->
+<!-- Section 7.11 assignment -->
+<!-- CS 80 Section 1678 -->		
+	
+<h1> Gas Mileage Calculator</h1>
+<hr></hr>	
+
+<script>
+
+var miles; 
+var gallons; 
+var mpg;
+var totalmiles = 0; 
+var totalgallons = 0; 
+var totalmpg;
+var tripcount = 0
+          
+while (true) 
+{ 						
+	tripcount++;
+    // input data
+    
+	miles = +prompt("Enter miles driven [enter 0 to quit entry]:", "1");
+    if (miles === 0) {
+        break;
+    }
+	
+    gallons = +prompt("Enter gallons used:", "1");
+	
+    // Calculations
+    if (gallons !== 0) {		
+        mpg = miles / gallons;
+    }
+    totalmiles += miles;
+    totalgallons += gallons;
+    if (totalgallons !== 0) {
+        totalmpg = totalmiles / totalgallons;
+    }
+	
+    // output & display
+	document.writeln("<p><strong>Trip:</strong> #", tripcount, "</p>");
+    document.writeln("<p><strong>Miles driven:</strong> ", miles, "<p/>");
+	document.writeln("<p><strong>Gallons used</strong>: ", gallons, "<p/>");
+	document.writeln("<p><strong>MPG this tankful:</strong> ", mpg, "<p/>");
+	document.writeln("<p><strong>Total MPG:</strong> ", totalmpg, "</p>");
+	document.writeln("<hr></hr>");
+
+}
+</script>
+</body>
+</html>
